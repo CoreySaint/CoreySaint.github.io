@@ -4,6 +4,32 @@
   <meta name="viewport content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .contact-img {
+      width: 260px;
+      height: 260px;
+      background: #222;
+      border-radius: 14px;
+    }
+    .contact-buttons button {
+      background: #1f1f1f;
+      border: 1px solid #333;
+      padding: 0.8rem 1.4rem;
+      border-radius: 10px;
+      cursor: pointer;
+      color: #e6e6e6;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: 0.25s ease;
+      width: 180px;
+      text-align:center;
+    }
+    .contact-buttons button:hover {
+      background: #2a2a2a;
+      border-color: #6cb8ff;
+      transform: translateY(-2px);
+    }
+</style>
 </head>  
   <body>
     <header>
@@ -18,8 +44,8 @@
     <section>
       <h1>Contact Me</h1>
       <div style="display:flex; gap:2rem; align-items:center;">
-        <div style="width:180px; height:180px; background:#222; border-radius:12px;"></div>
-        <div>
+        <div class="contact-img"></div>
+        <div class="contact-buttons">
           <p>Feel free to check out my profiles and reach out!</p>
           <button onclick="location.href='https://github.com/CoreySaint'">GitHub</button>
           <button onclick="location.href='linkedin.com/in/corey-st-jean/'">LinkedIn</button>
